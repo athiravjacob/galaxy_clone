@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #F9F5EF;
+}
+  
+  .pink_btn{
+    font: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #E02466;
+    color: aliceblue;
+    border:none ;
+    border-radius: 50px;
+    padding:1rem 3rem;
+    transition: ease-in-out 0.3s;
+
+  }
+  .pink_btn:hover{
+    color:#E02466;
+    background-color: aliceblue;
+  }
+
+  .text_color:hover{
+    color: #E02466;
+    cursor: pointer;
+}
+
+.scale:hover{
+    transform: scale(1.1);
+}
+/**************** NAVIGATION **************/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.img_logo{
+    padding: 2rem;
+    width:15rem;
+}
+.navitems{
+    color: #502C1C;
+    display: flex;
+    gap: 2rem;
+}
+
+.navitems_top{
+    display: flex;
+    align-self: baseline;
+    margin-left: auto;
+    padding: 1rem;
+    gap: 2rem;
+    /* position: relative; */
+
+}
+/* .bar{
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    height: 3rem;
+    width: 3px;
+    background: #502C1C;
+} */
+.fa-solid{
+    padding: 0 5px;
+    font-size: 21px;
+} 
+/******************** SECTION ONE *********************/
+
+.sectionOne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.galaxychocolate.co.in/cdn-cgi/image/width=1440,height=580,f=auto,quality=90/sites/g/files/fnmzdf1911/files/2021-10/396000232_Galaxy_HP_Hero_3000x1286px.jpg);
+    height:80vh;
+    position: relative;
+    background-position:center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+.heading{
+    font-size: 5rem;
+    color: aliceblue;
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+}
+
+/***************** SECTION TWO **********************/
+.sectionTwo {
+    display: flex;
+    align-items: center;
+    background: #502C1C;
+    padding: 3rem 1rem;
+}
+.sectionTwo_left{
+    width: 50%;
+    position: relative;
+
+   
+}
+
+
+
+.img_bounce{
+    animation: bounce infinite  2s ;
+    position: relative;
+
+}
+
+.sectionTwo_right{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 50%;
+
+    color: aliceblue;
+}
+.text{
+    font-size: 16px;
+    padding-bottom: 1rem;
+
+}
+.bold_text{
+    font-size: 64px;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+}
+
+@keyframes bounce {
+    0%{
+        top: 0;
+    }
+
+    50%{
+        top:50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+/**************** SECTION THREE *************/
+
+.sectionThree{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    align-items: center;
+    padding-top: 3rem;
+    
+}
+
+.curve_text{
+    font-size: 48px;
+    color: #502C1C;
+    font-weight: bold;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10rem;
+    padding: 8rem 0;
+    
+}
+.griditem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid_title{
+    font-weight: bold;
+    font-size: 21px;
+    color: #502C1C;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+
+/************* SECTION FOUR ************/
+.sectionFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background: url(https://www.galaxychocolate.co.in/cdn-cgi/image/width=1440,height=650,f=auto,quality=90/sites/g/files/fnmzdf1911/files/2021-02/Galaxy-about-header-16x9_0.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    padding: 3rem;
+}
+.sectionFour p:first-of-type{
+    font-weight: bold;
+    padding: 2rem;
+}
+.sectionFour h1{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.sectionFour p:last-of-type{
+    font-size: 21px;
+    padding-bottom: 2rem;
+}
+
+
+/************** SECTION FIVE ***************/
+.sectionFive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    
+}
+.flexitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    gap: 1rem;
+    text-align: center;
+    /* background: #E02466; */
+
+}
+.flexitem img{
+    width: 350px;
+}
+
+.flexitem p:first-of-type{
+    width: 80%;
+}
+.flexitem p:last-of-type{
+    width: 90%;
+    color: #502C1C;
+}
+/************************** SECTION SIX **************************/
+.sectionSix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+/******** image slider ******/
+.image_slider_container{
+    max-width: 1200px;
+    width: 95%;
+}
+.image_slider{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    overflow-x: auto;
+    /* font-size: 0;  */
+    /* scrollbar-width: none; */
+    margin-bottom: 30px;
+    /* scrollbar-color: red yellow; */
+}
+
+
+.img_social{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.scrollbar_container{
+    height: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.scrollbar_track{
+    height: 10px;
+    width: 100%;
+    background: #e089a7;
+    position: relative;
+    border-radius: 4px;
+}
+.scrollbar_thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #E02466;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+ 
+
+
+
+/***************** BOTTOM NAVIGATION **************/
+.bottomNav{
+    display: flex;
+    align-items: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #502C1C;
+    gap: 10px;
+}
+.navitem{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+
+/* FOOTER */
+.footer{
+    background: #502C1C;
+    color: #F9F5EF;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.footer_top{
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    
+}
+.fa-brands{
+    padding: 5px;
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 15rem;
+}
+li{
+    list-style: none;
+    padding: 1rem 0;
+}
+.list1
+{
+    display: flex;
+}
+.list1 p{
+    margin-top: 50px;
+}
+
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.small{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.text_mars{
+    font-size: 52px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+}
+
+.btn_hollow{
+    border: 2px solid #F9F5EF;
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    color: #F9F5EF;
+    background: transparent;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+
+
+.container {
+  position: relative;
+  background: #F9F5EF;
+  height: 25vh;
+}
+
+.wave {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  background: #F9F5EF;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #502C1C;
+  right: -1.5%;
+  top: 60%;
+}
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: #F9F5EF;
+  left: -1.5%;
+  top: 40%;
+}
